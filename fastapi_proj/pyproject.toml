@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Asif", email = "programmerasif@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.12",
+    "httpie>=3.2.4",
+    "requests>=2.32.3",
+    "uvicorn>=0.34.2",
+]
+
+[project.scripts]
+fastapi-proj = "fastapi_proj:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
