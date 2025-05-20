@@ -10,6 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115.12",
     "httpie>=3.2.4",
+    "pydantic>=2.11.4",
     "requests>=2.32.3",
     "uvicorn>=0.34.2",
 ]
