@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from models import Item
 
 app = FastAPI()
@@ -10,3 +10,7 @@ async def read_item(item: Item):
 @app.put("/items/{item_id}")
 async def update_item(item_id: int, item: Item):
     return {"item_id": item_id, **item.dict()}
+
+@app.post("/items/item")
+async def update_item_1(item: str = Body(embed=True)):
+    return item
